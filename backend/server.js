@@ -13,10 +13,10 @@ app.use (express.json()); // to parse the incoming requests with JSON payloads (
 
 app.use("/api/auth",authRoutes);
 
-app.get("/", (req,res) =>{
-    //root route http://localhost:5000/
-    res.send("Hello World!!!!!!!!!");
-});
+// app.get("/", (req,res) =>{
+//     //root route http://localhost:5000/
+//     res.send("Hello World!!!!!!!!!");
+// });
 
 
 
