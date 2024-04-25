@@ -1,24 +1,25 @@
 import mongoose from 'mongoose';
+
 const messageSchema=new mongoose.Schema({
     
-    sernderId:{
+    senderId:{
         type:mongoose.Schema.Types.ObjectId,
         ref:"User",
-        required:true
+        required:true,
     },
 
     receiverId:{
         type:mongoose.Schema.Types.ObjectId,
         ref:"User",
-        required:true
+        required:true,
     },
 
     message:{
         type:String,
-        required:true
+        required:true,
     }
 
-},
+},  //createdAt, updatedAt
 {timestamps:true}
 );//Cool stuff to see the time of creation of each object ;)
 
