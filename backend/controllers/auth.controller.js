@@ -3,7 +3,7 @@ import bcrypt from "bcryptjs";
 import generateTokenAndSetCookie from '../utils/generateToken.js';
 import jwt from "jsonwebtoken";
 
-export const signup = async (req, res) => {
+export const signup = async (req, res) => { 
     try {
         const { fullName, username, password, confirmPassword, gender } = req.body;
        
